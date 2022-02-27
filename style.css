@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body{font-family: 'Noto Serif', serif;
+body{
+    font-family: 'Noto Serif', serif;
 }
 .navbar{
     display: flex;
@@ -100,7 +100,7 @@ p{
 .logo2{
     width: 160px;
 }
-.logo4{
+.logo3{
     height:70px;
     width:180px;
 }
@@ -136,7 +136,6 @@ p{
 }
 .col-4 img{
     width: 100%;
-
 }
 .title{
     text-align: center;
@@ -203,13 +202,8 @@ small{
 .testimonial .col-3:hover{
     transform: translateY(-10px);
 }
-.fa fa-quote-left{
-    font-size:34px;
-    color:#44a0ca;
-}
 
-
-------------brands-----------
+-----------brands-----------
 .brands{
     margin:auto;
 }
@@ -429,14 +423,11 @@ th:last-child{
 }
 
 
-
-
 /*--------------------------account-page------------*/
 
 .account-page{
     padding:50px 0;
     background: radial-gradient(#fff,#44a0ca);
- 
 }
 .form-container{
     background: #fff;
@@ -449,8 +440,6 @@ th:last-child{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     overflow: hidden;
 }
-
-
 
 .form-container span{
 
