@@ -446,7 +446,7 @@ th:last-child{
     font-weight: bold;
     padding: 0 10px;
     color: #555;
-    cursor: pointer;
+    cursor: default;
     width: 100px;
     display: inline-block;
 }
