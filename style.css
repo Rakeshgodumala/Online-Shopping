@@ -212,8 +212,8 @@ small{
 }
 .col-5 img{
     width: 100%
-    cursor: pointer;
-    filter: grayscale(100%);
+    cursor  pointer;
+    filter:grayscale(100%);
 }
 .col-5 img:hover{
     filter: grayscale(0);
@@ -473,7 +473,7 @@ form .btn{
     cursor: pointer;
     margin: 10px 0;
 }
-form .btn: focus{
+form .btn focus{
     outline:none;
 }
 #LoginForm{
