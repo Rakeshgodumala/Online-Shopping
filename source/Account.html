@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products-Virtual | Online Product</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+ 
     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
    <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"> <img src="images/vlogo.png" width="125px"></a>
+               <a href="index.html"> <img src="images/vlogo.png" width="125px"></a>
             </div>
             <nav>
                 <ul id="MenuItems">
@@ -24,92 +25,46 @@
                     <li><a href="Account.html">ACCOUNT</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px"height="30px">
+            <a href="cart.html"> <img src="images/cart.png" width="30px"height="30px"></a>
             <img src="images/menu.png" class="menu-icon"
              onclick="menutoggle()">
         </div>
     </div>
 
+    <!--------------account-page----------->
 
-<!-------------cart items details------------>
-<div class="small-cointainer cart-page">
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Quality</th>
-            <th>Subtotal</th>
-        </tr>
-    
-    <tr>
-        <td>
-           <a href="product detail.html"> <div class="cart-info"><img src="images/single product1.jfif"></a>
-                <div>
-                    <p><h3>Nordstrom Sky Blue Shirt</h3></p>
-                    <small>Price: ₹599.00</small>
-                    <br>
-                    <a href="">Remove</a>
-
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/khiladi.png" width="100%" >
                 </div>
-
-        </div>    
-     
-        <td><input type="number" value="1"></td>
-        <td> ₹ 599.00</td>
-    </tr>
-    <tr>
-        <td>
-            <div class="cart-info"><img src="images/sport.jpeg">
-                <div>
-                    <p> <h3>Sport Shoes</h3></p>   
-                    <small>Price: ₹299.00</small>
-                    <br>
-                    <a href="">Remove</a>
-                
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>   
+                        <form id="LoginForm">
+                            <input type="text" placeholder="email-id or username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        
+                        <form id="RegForm">
+                            <input type="text" placeholder=" username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
                 </div>
-
-        </div>    
-     
-        <td><input type="number" value="1"></td>
-        <td> ₹299.00</td>
-    </tr>
-    <tr>
-        <td>
-            <div class="cart-info"><img src="images/product1.jpg">
-                <div>
-                    <p> <h3> Men Trend  </h3></p>   
-                    <small>Price: ₹299.00</small>
-                    <br>
-                    <a href="">Remove</a>
-                
-                </div>
-
-        </div>    
-     
-        <td><input type="number" value="1"></td>
-        <td>  ₹ 299.00</td>
-    </tr>
-    
-</table>
-<div class="total-price">
-    <table>
-        <tr>
-            <td>Subtotal</td>
-            <td> ₹ 1197
-            </td>
-        </tr>
-        <tr>
-            <td>Tax</td>
-            <td> ₹ 3
-            </td>
-        </tr>
-        <tr>
-            <td>Total</td>
-            <td>₹ 1200 </td>
-        </tr>
-        
-    </table>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
 
 <!-------footer-------->
 
@@ -148,8 +103,9 @@
                 </ul>
             </div>
         </div>
+        
         <hr>
-       <p class="Condition">Condition of Use:<span>Privacy Policy</span></p>
+        <p class="Condition">Copywrite by @ RAKESH GODUMALA</p>
     </div>
 </div>
 
@@ -170,6 +126,28 @@
             MenuItems.style.maxHeight="0px";
         }
     }
+</script>
+
+<!----------------js for toggle Form------------>
+
+<script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+       LoginForm.style.transform = "translateX(300px)";
+       Indicator.style.transform = "translateX(0px)";
+    }
+    
 </script>
 </body>
 </html>
